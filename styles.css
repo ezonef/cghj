@@ -1,0 +1,589 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'); */
+@import url('https://fonts.cdnfonts.com/css/aire-exterior');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    background: #141c2442;
+    backdrop-filter: blur(5px);
+    z-index: 3;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+body {
+    background: #141C24;
+}
+
+.header__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.heder__link {
+    color: rgba(255, 255, 255, 0.527);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    transition: all .3s;
+}
+
+a.heder__link:hover {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border-bottom: 1px solid #00C5FF;
+}
+
+
+.burger {}
+
+.landing {
+    width: 100%;
+    height: 100vh;
+}
+
+.landing__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background: radial-gradient(49.95% 96.01% at 50.05% 49.91%, rgba(82, 125, 139, 0) 0%, rgba(82, 125, 139, 0.25) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/abstract-cloud-technology-with-big-data-and-interface-concept-connection-by-collecting-data-in-the-cloud-with-large-data-storage-systems-on-hi-tech-background-vector.jpg); */
+    /* border: 0.5px solid #57D6FF; */
+    /* box-shadow: -33px 17px 29px rgba(48, 80, 99, 0.048); */
+    border-radius: 15px;
+
+}
+
+.small__text {
+    color: white;
+    font-family: 'Aire Exterior', sans-serif;
+    font-size: 10px;
+    padding: 10px 0;
+}
+
+.bigger__text {
+    color: white;
+    font-family: 'Aire Exterior', sans-serif;
+}
+
+.button {
+    width: 251px;
+    height: 51px;
+    background: #58a;
+    background: linear-gradient(-45deg, transparent 15px, rgb(255, 255, 255) 0), linear-gradient(45deg, transparent 15px, rgba(0, 0, 0, 0) 0);
+    margin: 60px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Aire Exterior', sans-serif;
+    font-size: 25px;
+}
+
+.button__inner {
+    position: absolute;
+    width: 251px;
+    height: 51px;
+
+    margin: 60px 0;
+}
+
+
+.how_works {
+    width: 100%;
+    height: 580px;
+}
+
+.black__circle {
+    width: 461px;
+    height: 461px;
+    background: rgba(0, 0, 0, 0.25);
+    filter: blur(100px);
+    position: absolute;
+    margin: 300px 0 0px 80%;
+    overflow: auto;
+    object-fit: cover;
+    overflow: hidden;
+    overflow-y: hidden;
+    /*для вертикального*/
+    overflow-x: hidden;
+    /*для горизонтального*/
+}
+
+.how__works__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.line {
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+
+}
+
+.how_image {
+    width: 60%;
+    height: 100%;
+    background: url(./img/computer.png) no-repeat center;
+
+}
+
+.how__text {
+    width: 40%;
+    height: 100%;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 180%;
+    /* identical to box height, or 29px */
+    color: #57d5ffc0;
+    position: relative;
+    margin: 0 0 0 90px;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background: #57d5ffc0;
+    margin: 12px 0px 10px -90px;
+}
+
+.AAfont {
+    font-family: 'Aire Exterior', sans-serif;
+    font-size: 45px;
+    color: white;
+    margin: 0 0 60px 0px;
+}
+
+.AAfont1 {
+    font-family: 'Aire Exterior', sans-serif;
+    font-size: 45px;
+    color: white;
+}
+
+.graytext {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21.33px;
+    line-height: 150%;
+    width: 450px;
+    color: #ABABAB;
+}
+
+.none {
+    width: 271px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 27px 0;
+    outline: none;
+}
+
+.download {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #00C5FF;
+    position: relative;
+    margin: 60px 0 60px 0px;
+}
+
+.download::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 1px;
+    border: 1px solid #00C5FF;
+    margin: 21px 60px 60px 0px;
+}
+
+.margin {
+    margin: 120px 0 0px 0;
+}
+
+.fast__start {
+    width: 100%;
+    height: 500px;
+}
+
+.fast__start__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+.fast__start__icons {
+    width: 1000px;
+    /* margin: 0 auto; */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 20px;
+    justify-content: space-between;
+}
+
+.fast__start__icon {
+    width: 180px;
+    height: 100px;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21.33px;
+    line-height: 150%;
+    /* identical to box height, or 32px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #F1F1F1;
+}
+
+.line__betwen__icons {
+    width: 73px;
+    height: 1px;
+    background: #50AFCD;
+}
+
+.fast__start__undertitle {
+    margin: 15px 0 90px 0px;
+}
+
+
+.flex__tarifs {
+    width: 100%;
+    height: 1200px;
+}
+
+.blue__circle {
+    position: absolute;
+    z-index: -3;
+    width: 246px;
+    height: 246px;
+    background: rgba(0, 197, 255, 0.15);
+    filter: blur(78px);
+    margin: 200px 0 200px 45%;
+}
+
+.flex__tarifs__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.flex__tarifs__undertitle {
+    margin: 20px 0 0 50px;
+}
+
+
+.flex__tarifs__cards {
+    padding: 0px 10px;
+    margin: 0 0px 0 100px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line__blue {
+    width: 582px;
+    height: 1px;
+    background: #00C5FF;
+    margin: 80px auto 0 auto;
+}
+
+
+.flex__card {
+    width: 380px;
+    height: 543px;
+    background: #1F2631;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    transition: all .6s ease;
+}
+
+
+.card__container {
+    padding: 42px 42px 0 42px;
+    width: 100%;
+    height: 100%;
+
+
+    /* background-color: #fff; */
+}
+
+.card__name {
+    padding: 40px 0px 0px 0;
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-size: 30px;
+    color: white;
+    width: 100px;
+    transition: all .6s ease;
+
+}
+
+.card__price {
+    color: white;
+    font-family: 'Roboto';
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 22px 0px;
+    transition: all .6s ease;
+
+}
+
+li {
+    list-style: none;
+}
+
+.card__description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19.33px;
+    line-height: 150%;
+    list-style: none;
+    transition: all .6s ease;
+
+    /* or 32px */
+
+
+    color: #ABABAB;
+}
+
+.card__btn {
+    margin: 60px auto 0 auto;
+    width: 321px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Aire Exterior';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 180%;
+    color: #141C24;
+    background: #00C5FF;
+    border-radius: 5px;
+    transition: all .6s ease;
+
+}
+
+
+.flex__card:hover {
+    background: #00C5FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.flex__card:hover .card__name,
+.flex__card:hover .card__price,
+.flex__card:hover .card__description {
+    color: #141C24;
+}
+
+.flex__card:hover .card__btn {
+    background: #141C24;
+    color: white;
+}
+
+.pictures {
+    width: 100%;
+    height: 800px;
+}
+
+.containerpicture {
+    width: 100%;
+    height: 100%;
+    max-width: 1560px;
+    margin: 0 0 0 auto;
+    /* background-color: #fff; */
+}
+
+.pictures__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.picture__text1 {
+    margin: 100px 0 0 200px;
+}
+
+.pictures__text {
+    width: 100%;
+    height: 100%;
+}
+
+.picture__text2 {
+    width: 200px;
+    margin: 20px 0 20px 110px;
+}
+
+.fontsmall {
+    font-size: 13px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    width: 300px;
+    margin: 80px 0 60px 110px;
+}
+
+.underlinetext {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    /* identical to box height */
+    margin: 0px 0 0px 110px;
+    color: #00C5FF;
+}
+
+.underlinetext::before {
+    content: "";
+    position: absolute;
+    width: 108px;
+    height: 1px;
+    background: #00C5FF;
+    margin: 20px 0 0 0;
+
+}
+
+.servers {
+    width: 100%;
+    height: 800px;
+}
+
+
+.servers__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.xddd {
+    margin: 20px 0 0 0;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background: #171717;
+}
+
+.footer__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first__footer {
+    width: 575px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pixelfont {
+    font-family: 'Aire Exterior', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.colorgray {
+    color: gray;
+    text-transform: uppercase;
+}
+
+.colorgray::after {
+    content: "◀";
+
+}
+
+.second__footer {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 14px;
+    color: gray;
+}
+
+.icons__footer {}
